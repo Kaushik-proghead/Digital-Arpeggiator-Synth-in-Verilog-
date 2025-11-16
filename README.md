@@ -1,6 +1,3 @@
 Digital Arpeggiator Synth in Verilog 
 
-- Designed and simulated a digital synthesizer in Verilog that generates musical notes using sine-wave lookup tables
-- Implemented an arpeggiator module that cycles through chord tones in predefined patterns to create melodies
-- Built with finite state machines, counters and memory arrays
-- Verified functionality in simulation by exporting audio waveforms (.wav) to demonstrate real sound output
+This project is a small hardware-style audio synthesizer written entirely in Verilog. It uses a DDS oscillator, a custom sine ROM, an ADSR envelope, and a simple arpeggiator FSM to generate real audio that can be exported as a WAV file and played in any DAW. The goal wasn to explore how musical structure, timing and wave-generation can be done inside a digital logic environment. The arpeggio patterns, wave shaping, and envelopes are all tweakable, so we can experiment with different guitar-like tones and sequences. Everything runs in simulation using Icarus Verilog, with the testbench capturing samples and writing them into a standard WAV file. 
